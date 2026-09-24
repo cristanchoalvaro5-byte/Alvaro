@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | DevPlatform</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="dashboard">
+
+    <input type="checkbox" id="menu" class="menu" aria-label="Mostrar u ocultar menú lateral">
+
+    <header>
+        <div class="izq">
+            <label for="menu" class="hamburguesa" aria-hidden="true">☰</label>
+            <p class="dev">DevPlatform</p>
+        </div>
+        <div class="as">
+            <p class="nombre">Aprendiz SENA</p>
+            <p class="bolita" aria-hidden="true">AS</p>
+        </div>
+    </header>
+
+    <aside>
+        <nav aria-label="Menú principal">
+            <a href="dashboard.html" class="ai" aria-current="page">📊 Dashboard</a>
+            <a class="a" aria-disabled="true">📂 Proyectos</a>
+            <a class="a" aria-disabled="true">🎭 Colaboradores</a>
+            <a class="a" aria-disabled="true">⚙️ Configuración</a>
+
+            <div class="divider"></div>
+
+            <a href="index .html" class="cerrar">🚪 Cerrar sesión</a>
+        </nav>
+    </aside>
+
+    <main>
+        <div class="arriba">
+            <h1>Resumen de Proyectos</h1>
+            <button type="button" class="btn-nuevo">+ Nuevo Proyecto</button>
+        </div>
+
+        <section class="tarjetas" aria-label="Lista de proyectos">
+
+            <article class="tarjeta">
+                <span class="estado desarrollo">En desarrollo</span>
+                <h2>Sistema ERP SENA</h2>
+                <p>Módulo de gestión de inventarios y control de insumos en laboratorios de desarrollo.</p>
+                <ul class="etiquetas">
+                    <li>Java</li>
+                    <li>MySQL</li>
+                </ul>
+            </article>
+
+            <article class="tarjeta">
+                <span class="estado revision">En revisión</span>
+                <h2>API Rest Pagos</h2>
+                <p>Microservicio para procesamiento seguro de transacciones bancarias.</p>
+                <ul class="etiquetas">
+                    <li>Node.js</li>
+                    <li>Express</li>
+                </ul>
+            </article>
+
+            <article class="tarjeta">
+                <span class="estado completado">Completado</span>
+                <h2>Landing Page PWA</h2>
+                <p>Portal web accesible e interactivo para la promoción de proyectos formativos.</p>
+                <ul class="etiquetas">
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                </ul>
+            </article>
+
+            <article class="tarjeta">
+                <span class="estado desarrollo">En desarrollo</span>
+                <h2>App Móvil Inventario</h2>
+                <p>Aplicación cliente para el registro rápido de productos mediante código de barras.</p>
+                <ul class="etiquetas">
+                    <li>Android</li>
+                    <li>SQLite</li>
+                </ul>
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 ADSO - SENA. Evaluación Práctica de Maquetación y Estilos.</p>
+    </footer>
+
+</body>
+</html>
